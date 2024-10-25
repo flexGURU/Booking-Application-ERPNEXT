@@ -1,0 +1,685 @@
+2024-10-06 12:21:39,153 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'app_path': 'web-template/rtg'}
+2024-10-06 12:23:48,226 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'app_path': 'dashboard-view/Accounts'}
+2024-10-06 12:27:37,105 ERROR frappe Could not take error snapshot: invalid syntax (hooks.py, line 59)
+Site: keshi.site
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 100, in application
+    init_request(request)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 203, in init_request
+    for before_request_task in frappe.get_hooks("before_request"):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/bookin_system/bookin_system/hooks.py", line 59
+    application home page (will override Website Settings)
+                ^^^^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1388, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/model/document.py", line 87, in get_doc
+    controller = get_controller(doctype)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/model/base_document.py", line 89, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/bookin_system/bookin_system/hooks.py", line 59
+    application home page (will override Website Settings)
+                ^^^^
+SyntaxError: invalid syntax
+2024-10-06 12:27:37,110 ERROR frappe Failed to run after request hook
+Site: keshi.site
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 100, in application
+    init_request(request)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 203, in init_request
+    for before_request_task in frappe.get_hooks("before_request"):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/bookin_system/bookin_system/hooks.py", line 59
+    application home page (will override Website Settings)
+                ^^^^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 117, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/bookin_system/bookin_system/hooks.py", line 59
+    application home page (will override Website Settings)
+                ^^^^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 133, in application
+    response = handle_exception(e)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 419, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/website/serve.py", line 28, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/website/utils.py", line 530, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 172, in get_website_settings
+    hooks = frappe.get_hooks()
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/bookin_system/bookin_system/hooks.py", line 59
+    application home page (will override Website Settings)
+                ^^^^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 147, in application
+    run_after_request_hooks(request, response)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 167, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/bookin_system/bookin_system/hooks.py", line 59
+    application home page (will override Website Settings)
+                ^^^^
+SyntaxError: invalid syntax
+2024-10-06 12:27:51,309 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {}
+2024-10-07 09:24:29,749 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal C', 'trip_date': '2024-10-11', 'destination': 'Terminal D', 'cmd': 'bookin_system.booking_system.api.get_trip_details.get_trip_details'}
+2024-10-07 09:24:31,577 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal C', 'trip_date': '2024-10-11', 'destination': 'Terminal D', 'cmd': 'bookin_system.booking_system.api.get_trip_details.get_trip_details'}
+2024-10-07 09:24:33,127 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal C', 'trip_date': '2024-10-11', 'destination': 'Terminal D', 'cmd': 'bookin_system.booking_system.api.get_trip_details.get_trip_details'}
+2024-10-07 09:24:38,959 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal C', 'trip_date': '2024-10-11', 'destination': 'Terminal D', 'cmd': 'bookin_system.booking_system.api.get_trip_details.get_trip_details'}
+2024-10-07 09:34:42,487 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {}
+2024-10-07 09:34:42,496 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {}
+2024-10-07 09:40:44,041 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal C', 'trip_date': '11-10-2024', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-07 09:41:05,884 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal C', 'trip_date': '11-10-2024', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-07 09:41:28,521 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal C', 'trip_date': '11-10-2024', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-07 22:05:08,502 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'trip_name': 'TRIP-241007-Terminal A-Terminal D', 'origin': 'Terminal C', 'trip_date': '2024-10-11', 'destination': 'Terminal D', 'cmd': 'erpnext.selected_trip_details.get_selected_trip'}
+2024-10-07 22:05:25,501 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'name': 'TRIP-241007-Terminal A-Terminal D', 'origin': 'Terminal C', 'trip_date': '2024-10-11', 'destination': 'Terminal D', 'cmd': 'erpnext.selected_trip_details.get_selected_trip'}
+2024-10-08 10:24:25,146 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal C', 'trip_date': '2024-10-11', 'destination': 'Terminal D', 'cmd': 'erpnext.selected_trip_details.get_selected_trip'}
+2024-10-08 10:24:44,269 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal C', 'trip_date': '2024-10-11', 'destination': 'Terminal D', 'name': 'mukuna', 'cmd': 'erpnext.selected_trip_details.get_selected_trip'}
+2024-10-08 10:31:29,543 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'name': 'TRIP-241007', 'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.selected_trip_details.get_selected_trip'}
+2024-10-09 09:46:36,813 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'destination': 'Terminal D', 'name': 'TRIP-241007-Terminal A-Terminal D', 'origin': 'Terminal A', 'trip_date': '2024-10-25', 'cmd': 'erpnext.mpesa_payment.mpesa_payment'}
+2024-10-09 11:52:13,689 ERROR frappe Could not take error snapshot: invalid syntax. Perhaps you forgot a comma? (hooks.py, line 320)
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"customer_name":"John Mukuna Nganga","undefined":"0710257237","customer_email":"gmg","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 100, in application
+    init_request(request)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 203, in init_request
+    for before_request_task in frappe.get_hooks("before_request"):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/erpnext/erpnext/hooks.py", line 320
+    	"Ticket" : {
+    	           ^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1388, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/model/document.py", line 87, in get_doc
+    controller = get_controller(doctype)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/model/base_document.py", line 89, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/erpnext/erpnext/hooks.py", line 320
+    	"Ticket" : {
+    	           ^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+2024-10-09 11:52:13,698 ERROR frappe Failed to run after request hook
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"customer_name":"John Mukuna Nganga","undefined":"0710257237","customer_email":"gmg","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 147, in application
+    run_after_request_hooks(request, response)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 167, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/erpnext/erpnext/hooks.py", line 320
+    	"Ticket" : {
+    	           ^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+2024-10-09 12:33:55,454 ERROR frappe Could not take error snapshot: unexpected indent (hooks.py, line 326)
+Site: keshi.site
+Form Dict: {'doc': '{"name":"trv6t0kobv","owner":"Administrator","creation":"2024-10-09 12:21:52.662637","modified":"2024-10-09 12:25:11.033474","modified_by":"Administrator","docstatus":0,"idx":0,"trip":"TRIP-241007-Terminal A-Terminal D","seat_number":0,"customer_name":"hhi8u","customer_email":"hh","customer_id":"hhjoui","payment_method":"Cash","doctype":"Booking","__unsaved":1}', 'action': 'Save'}
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 100, in application
+    init_request(request)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 203, in init_request
+    for before_request_task in frappe.get_hooks("before_request"):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/erpnext/erpnext/hooks.py", line 326
+    	tuple(period_closing_doctypes): {
+    ^
+IndentationError: unexpected indent
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1388, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/model/document.py", line 87, in get_doc
+    controller = get_controller(doctype)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/model/base_document.py", line 89, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/erpnext/erpnext/hooks.py", line 326
+    	tuple(period_closing_doctypes): {
+    ^
+IndentationError: unexpected indent
+2024-10-09 12:33:55,458 ERROR frappe Failed to run after request hook
+Site: keshi.site
+Form Dict: {'doc': '{"name":"trv6t0kobv","owner":"Administrator","creation":"2024-10-09 12:21:52.662637","modified":"2024-10-09 12:25:11.033474","modified_by":"Administrator","docstatus":0,"idx":0,"trip":"TRIP-241007-Terminal A-Terminal D","seat_number":0,"customer_name":"hhi8u","customer_email":"hh","customer_id":"hhjoui","payment_method":"Cash","doctype":"Booking","__unsaved":1}', 'action': 'Save'}
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 147, in application
+    run_after_request_hooks(request, response)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/app.py", line 167, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1696, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1665, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1531, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/thegreat/erp/frappe-bench/apps/erpnext/erpnext/hooks.py", line 326
+    	tuple(period_closing_doctypes): {
+    ^
+IndentationError: unexpected indent
+2024-10-09 13:13:16,564 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"customer_name":"John Mukuna Nganga","undefined":"254710257237","customer_email":"mukuna","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-09 13:18:14,404 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"customer_name":"John Mukuna Nganga","undefined":"254710257237","customer_email":"mukuna","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-09 13:18:21,920 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"customer_email":"jh","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-09 13:22:41,279 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"phone_number":"+254-710257237","customer_name":"John Mukuna Nganga","customer_email":"5wt","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-09 13:23:18,996 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"phone_number":"+254-710257237","customer_name":"John Mukuna Nganga","customer_email":"5wt","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-10 08:35:32,168 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"customer_name":"John Mukuna Nganga","phone_number":"254710257237","doctype":"Ticket","web_form_name":"ticket","customer_email":"wef"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-10 08:38:12,036 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"doctype":"Ticket","web_form_name":"ticket","phone_number":"254710257237","customer_name":"John Mukuna Nganga","customer_email":"ewf"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-10 08:39:37,967 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"customer_name":"John Mukuna Nganga","phone_number":"254710257237","customer_email":"sfasf","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-10 10:48:07,295 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"customer_name":"John Mukuna Nganga","phone_number":"254710257237","customer_email":"sfasf","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-10 10:48:43,950 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"customer_name":"John Mukuna Nganga","phone_number":"254710257237","customer_email":"sfasf","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-10 10:49:02,023 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":800,"customer_email":"wefd","phone_number":"254710257237","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-10 11:38:03,918 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'name': 'mimi', 'cmd': 'erpnext.mpesa_payment.mpesa_callback_handler'}
+2024-10-14 18:09:43,701 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"TRIP-241007-Terminal A-Terminal D","bus_number":67,"trip_name":"TRIP-241007-Terminal A-Terminal D","available_seats":45,"depart_time":"14:00:00","arrive_time":"21:00:00","price":1,"customer_name":"John Mukuna Nganga","customer_email":"mukunajohn329@gmail.com","phone_number":"0710257237","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-15 11:32:00,024 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'cmd': 'erpnext.role_check.check_user_role'}
+2024-10-15 11:33:17,632 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'allowed_roles': 'User', 'cmd': 'erpnext.role_check.check_user_role'}
+2024-10-15 11:43:32,271 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'allowed_roles': 'User', 'cmd': 'erpnext.role_check.check_user_role'}
+2024-10-15 11:51:38,962 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'cmd': 'erpnext.role_check.check_user_role'}
+2024-10-15 15:40:54,566 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'cmd': 'erpnext.role_check.check_user_role'}
+2024-10-15 17:52:39,413 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'allowed_roles': ['Translator'], 'cmd': 'erpnext.role_check.check_user_role'}
+2024-10-16 12:21:09,855 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-16 12:21:13,002 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-16 12:21:32,223 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-16 12:21:33,374 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-16 12:21:34,127 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-16 12:21:34,717 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-16 12:21:35,194 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-16 16:41:45,684 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-16 16:41:52,999 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-16 19:01:54,067 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'allowed_roles': ['Translator'], 'cmd': 'erpnext.logout.logout'}
+2024-10-16 19:02:20,106 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'user': 'Administrator', 'cmd': 'erpnext.logout.logout'}
+2024-10-16 19:30:27,880 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'user': 'Administrator', 'cmd': 'erpnext.auth_login.login'}
+2024-10-17 17:02:22,132 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-17 17:07:42,390 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-17 17:13:52,655 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-17 17:14:31,241 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.get_trip_details.get_trip_details'}
+2024-10-17 17:18:46,596 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'name': 'm7n5lq8i6s', 'origin': 'Terminal A', 'trip_date': '2024-10-25', 'destination': 'Terminal D', 'cmd': 'erpnext.selected_trip_details.get_selected_trip'}
+2024-10-18 05:26:58,541 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"m7n5lq8i6s","bus_number":34,"available_seats":34,"depart_time":"17:18:24","arrive_time":"17:18:24","price":1,"customer_name":"John Mukuna Nganga","customer_email":"admin@admin.com","phone_number":"254710257237","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-18 05:53:36,860 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'cmd': 'erpnext.mpesa_payment.mpesa_payment'}
+2024-10-18 07:38:18,209 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"m7n5lq8i6s","bus_number":34,"available_seats":34,"depart_time":"17:18:24","arrive_time":"17:18:24","price":1,"customer_name":"John Mukuna Nganga","customer_email":"Administrator","phone_number":"254710257237","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-18 07:38:33,455 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"m7n5lq8i6s","bus_number":34,"available_seats":34,"depart_time":"17:18:24","arrive_time":"17:18:24","price":1,"customer_name":"John Mukuna Nganga","customer_email":"Administrator","phone_number":"254710257237","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-18 07:43:39,008 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"m7n5lq8i6s","bus_number":34,"available_seats":34,"depart_time":"17:18:24","arrive_time":"17:18:24","price":1,"customer_name":"John Mukuna Nganga","customer_email":"mukunajohn329@outlook.com","phone_number":"254710257237","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-18 07:44:14,217 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"m7n5lq8i6s","bus_number":34,"available_seats":34,"depart_time":"17:18:24","arrive_time":"17:18:24","price":1,"customer_name":"John Mukuna Nganga","customer_email":"mukunajohn329@gmail.com","phone_number":"254710257237","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-18 09:29:07,604 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"m7n5lq8i6s","bus_number":34,"available_seats":34,"depart_time":"17:18:24","arrive_time":"17:18:24","price":1,"customer_name":"John Mukuna Nganga","customer_email":"mukunajohn329@outlook.com","phone_number":"254710257237","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-18 09:29:24,673 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'data': '{"trip_date":"2024-10-25","origin":"Terminal A","destination":"Terminal D","bus_name":"m7n5lq8i6s","bus_number":34,"available_seats":34,"depart_time":"17:18:24","arrive_time":"17:18:24","price":1,"customer_name":"John Mukuna Nganga","customer_email":"mukunajohn329@outlook.com","phone_number":"254710257237","doctype":"Ticket","web_form_name":"ticket"}', 'web_form': 'ticket', 'for_payment': 'false', 'cmd': 'frappe.website.doctype.web_form.web_form.accept'}
+2024-10-18 11:37:11,978 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'doc': '{"name":"Payment Record","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:29:00.073056","modified_by":"Administrator","docstatus":0,"idx":0,"read_only":0,"in_create":0,"allow_rename":1,"module":"Booking system","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":0,"quick_entry":0,"track_changes":0,"track_seen":0,"track_views":0,"custom":0,"beta":0,"is_virtual":0,"queue_in_background":0,"max_attachments":0,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"creation","sort_order":"DESC","force_re_route_to_default_view":0,"show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","migration_hash":"429a0663b514e9bcc52454fa843dbf3e","doctype":"DocType","permissions":[{"name":"a6nnk385nl","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":1,"role":"System Manager","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"parent":"Payment Record","parentfield":"permissions","parenttype":"DocType","doctype":"DocPerm"}],"fields":[{"name":"a6nn9jk477","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":1,"label":"Customer","fieldtype":"Link","fieldname":"customer","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"CustomerDemo","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField","__checked":1},{"name":"a6nnn8n6bq","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":2,"label":"result_desc","fieldtype":"Data","fieldname":"result_desc","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn794keb","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":3,"label":"amount","fieldtype":"Data","fieldname":"amount","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn37ease","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":4,"label":"Mpesa receipt","fieldtype":"Data","fieldname":"mpesa_receipt_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnoru5v1","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":5,"label":"Transaction date","fieldtype":"Data","fieldname":"transaction_date","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnrm5ld1","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":6,"label":"Phone number","fieldtype":"Data","fieldname":"phone_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn27d2s6","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":7,"label":"Status","fieldtype":"Select","fieldname":"status","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Pending\\nPaid\\nUnpaid","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnq8jkq2","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":8,"label":"Ticket invoice","fieldtype":"Link","fieldname":"ticket_invoice","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Ticket","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"}],"states":[],"actions":[],"links":[],"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-18 11:38:24,983 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'doc': '{"name":"Payment Record","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:29:00.073056","modified_by":"Administrator","docstatus":0,"idx":0,"read_only":0,"in_create":0,"allow_rename":1,"module":"Booking system","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":0,"quick_entry":0,"track_changes":0,"track_seen":0,"track_views":0,"custom":0,"beta":0,"is_virtual":0,"queue_in_background":0,"max_attachments":0,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"creation","sort_order":"DESC","force_re_route_to_default_view":0,"show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","migration_hash":"429a0663b514e9bcc52454fa843dbf3e","doctype":"DocType","permissions":[{"name":"a6nnk385nl","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":1,"role":"System Manager","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"parent":"Payment Record","parentfield":"permissions","parenttype":"DocType","doctype":"DocPerm"}],"fields":[{"name":"a6nn9jk477","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":1,"label":"Customer","fieldtype":"Link","fieldname":"customer","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"CustomerDemo","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField","__checked":1},{"name":"a6nnn8n6bq","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":2,"label":"result_desc","fieldtype":"Data","fieldname":"result_desc","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn794keb","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":3,"label":"amount","fieldtype":"Data","fieldname":"amount","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn37ease","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":4,"label":"Mpesa receipt","fieldtype":"Data","fieldname":"mpesa_receipt_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnoru5v1","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":5,"label":"Transaction date","fieldtype":"Data","fieldname":"transaction_date","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnrm5ld1","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":6,"label":"Phone number","fieldtype":"Data","fieldname":"phone_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn27d2s6","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":7,"label":"Status","fieldtype":"Select","fieldname":"status","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Pending\\nPaid\\nUnpaid","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnq8jkq2","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":8,"label":"Ticket invoice","fieldtype":"Link","fieldname":"ticket_invoice","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Ticket","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"}],"states":[],"actions":[],"links":[],"__unsaved":1,"naming_rule":"Expression","autoname":"format:{customer}"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-18 11:38:41,777 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'doc': '{"name":"Payment Record","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:29:00.073056","modified_by":"Administrator","docstatus":0,"idx":0,"read_only":0,"in_create":0,"allow_rename":1,"module":"Booking system","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":0,"quick_entry":0,"track_changes":0,"track_seen":0,"track_views":0,"custom":0,"beta":0,"is_virtual":0,"queue_in_background":0,"max_attachments":0,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"creation","sort_order":"DESC","force_re_route_to_default_view":0,"show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","migration_hash":"429a0663b514e9bcc52454fa843dbf3e","doctype":"DocType","permissions":[{"name":"a6nnk385nl","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":1,"role":"System Manager","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"parent":"Payment Record","parentfield":"permissions","parenttype":"DocType","doctype":"DocPerm"}],"fields":[{"name":"a6nn9jk477","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":1,"label":"Customer","fieldtype":"Link","fieldname":"customer","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"CustomerDemo","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField","__checked":0},{"name":"a6nnn8n6bq","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":2,"label":"result_desc","fieldtype":"Data","fieldname":"result_desc","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn794keb","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":3,"label":"amount","fieldtype":"Data","fieldname":"amount","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn37ease","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":4,"label":"Mpesa receipt","fieldtype":"Data","fieldname":"mpesa_receipt_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnoru5v1","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":5,"label":"Transaction date","fieldtype":"Data","fieldname":"transaction_date","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnrm5ld1","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":6,"label":"Phone number","fieldtype":"Data","fieldname":"phone_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn27d2s6","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":7,"label":"Status","fieldtype":"Select","fieldname":"status","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Pending\\nPaid\\nUnpaid","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnq8jkq2","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":8,"label":"Ticket invoice","fieldtype":"Link","fieldname":"ticket_invoice","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Ticket","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"}],"states":[],"actions":[],"links":[],"__unsaved":1,"naming_rule":"Expression","autoname":"format:{customer}"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-18 11:38:46,057 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'doc': '{"name":"Payment Record","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:29:00.073056","modified_by":"Administrator","docstatus":0,"idx":0,"read_only":0,"in_create":0,"allow_rename":1,"module":"Booking system","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":0,"quick_entry":0,"track_changes":0,"track_seen":0,"track_views":0,"custom":0,"beta":0,"is_virtual":0,"queue_in_background":0,"max_attachments":0,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"creation","sort_order":"DESC","force_re_route_to_default_view":0,"show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","migration_hash":"429a0663b514e9bcc52454fa843dbf3e","doctype":"DocType","permissions":[{"name":"a6nnk385nl","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":1,"role":"System Manager","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"parent":"Payment Record","parentfield":"permissions","parenttype":"DocType","doctype":"DocPerm"}],"fields":[{"name":"a6nn9jk477","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":1,"label":"Customer","fieldtype":"Link","fieldname":"customer","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"CustomerDemo","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField","__checked":0},{"name":"a6nnn8n6bq","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":2,"label":"result_desc","fieldtype":"Data","fieldname":"result_desc","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn794keb","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":3,"label":"amount","fieldtype":"Data","fieldname":"amount","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn37ease","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":4,"label":"Mpesa receipt","fieldtype":"Data","fieldname":"mpesa_receipt_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnoru5v1","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":5,"label":"Transaction date","fieldtype":"Data","fieldname":"transaction_date","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnrm5ld1","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":6,"label":"Phone number","fieldtype":"Data","fieldname":"phone_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn27d2s6","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":7,"label":"Status","fieldtype":"Select","fieldname":"status","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Pending\\nPaid\\nUnpaid","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnq8jkq2","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":8,"label":"Ticket invoice","fieldtype":"Link","fieldname":"ticket_invoice","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Ticket","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"}],"states":[],"actions":[],"links":[],"__unsaved":1,"naming_rule":"Expression","autoname":"format:{customer}"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-18 11:38:47,136 ERROR frappe New Exception collected in error log
+Site: keshi.site
+Form Dict: {'doc': '{"name":"Payment Record","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:29:00.073056","modified_by":"Administrator","docstatus":0,"idx":0,"read_only":0,"in_create":0,"allow_rename":1,"module":"Booking system","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":0,"quick_entry":0,"track_changes":0,"track_seen":0,"track_views":0,"custom":0,"beta":0,"is_virtual":0,"queue_in_background":0,"max_attachments":0,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"creation","sort_order":"DESC","force_re_route_to_default_view":0,"show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","migration_hash":"429a0663b514e9bcc52454fa843dbf3e","doctype":"DocType","permissions":[{"name":"a6nnk385nl","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":1,"role":"System Manager","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"parent":"Payment Record","parentfield":"permissions","parenttype":"DocType","doctype":"DocPerm"}],"fields":[{"name":"a6nn9jk477","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":1,"label":"Customer","fieldtype":"Link","fieldname":"customer","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"CustomerDemo","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField","__checked":0},{"name":"a6nnn8n6bq","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":2,"label":"result_desc","fieldtype":"Data","fieldname":"result_desc","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn794keb","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":3,"label":"amount","fieldtype":"Data","fieldname":"amount","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn37ease","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":4,"label":"Mpesa receipt","fieldtype":"Data","fieldname":"mpesa_receipt_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnoru5v1","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":5,"label":"Transaction date","fieldtype":"Data","fieldname":"transaction_date","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnrm5ld1","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":6,"label":"Phone number","fieldtype":"Data","fieldname":"phone_number","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nn27d2s6","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":7,"label":"Status","fieldtype":"Select","fieldname":"status","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Pending\\nPaid\\nUnpaid","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"a6nnq8jkq2","owner":"Administrator","creation":"2024-10-18 06:00:29.560815","modified":"2024-10-18 11:28:59.975295","modified_by":"Administrator","docstatus":0,"idx":8,"label":"Ticket invoice","fieldtype":"Link","fieldname":"ticket_invoice","length":0,"non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"options":"Ticket","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"columns":0,"parent":"Payment Record","parentfield":"fields","parenttype":"DocType","doctype":"DocField"}],"states":[],"actions":[],"links":[],"__unsaved":1,"naming_rule":"Expression","autoname":"format:{customer}"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}

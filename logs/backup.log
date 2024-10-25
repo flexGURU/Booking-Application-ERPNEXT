@@ -1,0 +1,180 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241006_120002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-06 12:00:04.059072
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241006_120002-keshi_site-site_config_backup.json 127.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241006_120002-keshi_site-database.sql.gz 779.9KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241006_180001-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-06 18:00:03.678402
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241006_180001-keshi_site-site_config_backup.json 149.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241006_180001-keshi_site-database.sql.gz 793.9KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241007_180002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-07 18:00:06.329319
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241007_180002-keshi_site-site_config_backup.json 149.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241007_180002-keshi_site-database.sql.gz 820.7KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241008_120001-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-08 12:00:03.327024
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241008_120001-keshi_site-site_config_backup.json 149.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241008_120001-keshi_site-database.sql.gz 844.0KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241008_180001-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-08 18:00:03.491754
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241008_180001-keshi_site-site_config_backup.json 149.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241008_180001-keshi_site-database.sql.gz 854.4KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241009_120002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-09 12:00:04.648911
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241009_120002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241009_120002-keshi_site-database.sql.gz 881.5KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241009_180003-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-09 18:00:07.557053
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241009_180003-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241009_180003-keshi_site-database.sql.gz 894.1KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241010_120002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-10 12:00:03.884464
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241010_120002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241010_120002-keshi_site-database.sql.gz 905.2KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241010_180001-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-10 18:00:03.389181
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241010_180001-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241010_180001-keshi_site-database.sql.gz 909.3KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241014_180002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-14 18:00:03.937918
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241014_180002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241014_180002-keshi_site-database.sql.gz 972.4KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241015_120002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-15 12:00:03.500572
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241015_120002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241015_120002-keshi_site-database.sql.gz 983.8KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241015_180003-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-15 18:00:06.424109
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241015_180003-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241015_180003-keshi_site-database.sql.gz 990.8KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241016_060002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-16 06:00:03.892418
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241016_060002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241016_060002-keshi_site-database.sql.gz 990.7KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241016_120002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-16 12:00:04.190728
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241016_120002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241016_120002-keshi_site-database.sql.gz 956.9KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241016_180002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-16 18:00:04.164656
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241016_180002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241016_180002-keshi_site-database.sql.gz 963.6KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241017_120002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-17 12:00:03.723704
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241017_120002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241017_120002-keshi_site-database.sql.gz 976.2KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241017_180002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-17 18:00:03.646657
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241017_180002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241017_180002-keshi_site-database.sql.gz 990.1KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241018_000002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-18 00:00:07.191223
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241018_000002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241018_000002-keshi_site-database.sql.gz 992.6KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241018_060001-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-18 06:00:03.119734
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241018_060001-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241018_060001-keshi_site-database.sql.gz 996.4KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241018_120002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-18 12:00:03.692042
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241018_120002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241018_120002-keshi_site-database.sql.gz 1015.2KiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241019_120001-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-19 12:00:03.761699
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241019_120001-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241019_120001-keshi_site-database.sql.gz 1.0MiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241019_180002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-19 18:00:06.964320
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241019_180002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241019_180002-keshi_site-database.sql.gz 1.0MiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241020_120002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-20 12:00:04.312571
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241020_120002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241020_120002-keshi_site-database.sql.gz 1.1MiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241020_180002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-20 18:00:04.074748
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241020_180002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241020_180002-keshi_site-database.sql.gz 1.1MiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241021_000002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-21 00:00:05.644847
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241021_000002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241021_000002-keshi_site-database.sql.gz 1.2MiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241021_180002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-21 18:00:07.521141
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241021_180002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241021_180002-keshi_site-database.sql.gz 1.3MiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241022_180002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-22 18:00:05.840883
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241022_180002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241022_180002-keshi_site-database.sql.gz 1.4MiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241023_000002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-23 00:00:04.724369
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241023_000002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241023_000002-keshi_site-database.sql.gz 1.4MiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241024_120002-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-24 12:00:04.692036
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241024_120002-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241024_120002-keshi_site-database.sql.gz 1.4MiB
+Backup for Site keshi.site has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f444dd9cb04603a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f444dd9cb04603a | /usr/bin/gzip >> ./keshi.site/private/backups/20241024_180001-keshi_site-database.sql.gz
+
+Backup Summary for keshi.site at 2024-10-24 18:00:03.404061
+Config  : /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241024_180001-keshi_site-site_config_backup.json 216.0B
+Database: /home/thegreat/erp/frappe-bench/sites/keshi.site/private/backups/20241024_180001-keshi_site-database.sql.gz 1.4MiB
+Backup for Site keshi.site has been successfully completed

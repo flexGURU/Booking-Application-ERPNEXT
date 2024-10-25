@@ -1,0 +1,98 @@
+2024-10-07 13:44:00,324 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for keshi.site
+2024-10-07 13:44:00,337 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for keshi.site
+2024-10-07 13:44:00,347 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for keshi.site
+2024-10-07 13:44:00,358 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for keshi.site
+2024-10-07 13:44:00,393 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for keshi.site
+2024-10-07 13:44:00,401 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for keshi.site
+2024-10-07 13:44:00,419 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for keshi.site
+2024-10-07 13:44:00,423 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for keshi.site
+2024-10-07 13:44:00,441 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for keshi.site
+2024-10-07 13:44:00,452 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for keshi.site
+2024-10-07 13:44:00,488 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for keshi.site
+2024-10-07 13:44:00,502 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for keshi.site
+2024-10-07 13:44:00,506 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for keshi.site
+2024-10-07 13:44:00,535 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for keshi.site
+2024-10-07 13:44:00,544 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for keshi.site
+2024-10-07 13:44:00,551 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for keshi.site
+2024-10-07 13:44:00,555 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_offset_alerts because it was found in queue for keshi.site
+2024-10-07 13:44:00,565 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for keshi.site
+2024-10-07 20:52:00,135 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for keshi.site
+2024-10-07 20:52:00,179 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for keshi.site
+2024-10-07 20:52:00,195 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for keshi.site
+2024-10-07 20:52:00,200 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for keshi.site
+2024-10-07 20:52:00,214 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for keshi.site
+2024-10-07 20:52:00,226 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for keshi.site
+2024-10-07 20:52:00,230 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for keshi.site
+2024-10-07 20:52:00,254 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for keshi.site
+2024-10-07 20:52:00,273 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for keshi.site
+2024-10-07 20:52:00,288 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for keshi.site
+2024-10-07 20:52:00,294 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for keshi.site
+2024-10-07 20:52:00,322 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for keshi.site
+2024-10-07 20:52:00,333 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for keshi.site
+2024-10-07 20:52:00,343 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for keshi.site
+2024-10-07 20:52:00,352 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for keshi.site
+2024-10-07 20:52:00,405 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for keshi.site
+2024-10-07 20:52:00,447 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for keshi.site
+2024-10-09 11:32:00,681 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for keshi.site
+2024-10-09 11:32:00,705 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for keshi.site
+2024-10-09 11:32:00,752 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for keshi.site
+2024-10-09 11:32:00,759 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for keshi.site
+2024-10-09 11:32:00,830 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for keshi.site
+2024-10-23 06:24:01,099 ERROR scheduler Exception in Enqueue Events for Site keshi.site
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1080, in get_connection
+    if connection.can_read():
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 490, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/_parsers/hiredis.py", line 81, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/_parsers/hiredis.py", line 92, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 277, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 278, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 639, in _connect
+    raise err
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 627, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 109, in enqueue_events_for_site
+    enqueue_events()
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 129, in enqueue_events
+    if job_type.enqueue():
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 70, in enqueue
+    if not self.is_job_in_queue():
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 92, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 596, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 601, in get_job_status
+    if job := get_job(job_id):
+  File "/home/thegreat/erp/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 607, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 991, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4966, in hgetall
+    return self.execute_command("HGETALL", name)
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 545, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1084, in get_connection
+    connection.connect()
+  File "/home/thegreat/erp/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 283, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11001. Connection refused.
+2024-10-23 18:12:01,851 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for keshi.site
